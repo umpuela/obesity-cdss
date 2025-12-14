@@ -1,0 +1,76 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: var(--secondary_background);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid var(--tertiary_background);
+}
+
+h1 {
+  color: var(--text);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+p {
+  color: var(--tertiary_background);
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: grid;
+  gap: 15px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 18px 20px;
+  background-color: var(--background);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  color: var(--primary);
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--primary);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+a:hover .material-symbols-outlined {
+  color: var(--text);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 0.8em;
+  color: var(--tertiary_background);
+}

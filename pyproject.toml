@@ -1,0 +1,71 @@
+[project]
+name = "obesity-cdss"
+version = "0.1.0"
+description = "Clinical Decision Support System for Obesity Risk Prediction"
+readme = "README.md"
+requires-python = "~=3.12.0"
+dependencies = [
+    "fastapi>=0.119.1",
+    "uvicorn>=0.38.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.11.0",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "xgboost>=3.1.1",
+    "streamlit>=1.50.0",
+    "loguru>=0.7.3",
+    "httpx>=0.27.0",
+    "joblib>=1.3.0",
+    "plotly>=6.5.0",
+    "fpdf2>=2.8.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.4.2",
+    "ruff>=0.14.9",
+    "pre-commit>=4.5.0",
+    "ipykernel>=7.0.1",
+    "tqdm>=4.67.1",
+    "matplotlib>=3.10.7",
+    "seaborn>=0.13.2",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "ANN",  # Type annotations
+    "B",    # Bugbear
+    "E",    # pycodestyle errors
+    "F",    # Pyflakes
+    "I",    # Isort
+    "N",    # Naming
+    "PD",   # Pandas-vet
+    "PT",   # Pytest style
+    "RET",  # Return values
+    "SIM",  # Simplify
+    "UP",   # Pyupgrade
+    "W",    # pycodestyle warnings
+    "FAST", # FastAPI rules
+]
+ignore = ["ANN401", "N803", "N806"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = ["ANN", "S101"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-s -ra -q --tb=short --color=yes"
+testpaths = ["tests"]
+pythonpath = ["src"]

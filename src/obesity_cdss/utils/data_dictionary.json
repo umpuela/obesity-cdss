@@ -1,0 +1,178 @@
+{
+  "gender": {
+    "description": "Sexo biológico",
+    "original_name": "Gender",
+    "type": "cat_nominal",
+    "group": "Dados Físicos",
+    "values": {
+      "female": "Feminino",
+      "male": "Masculino"
+    }
+  },
+  "age": {
+    "description": "Idade (anos)",
+    "original_name": "Age",
+    "type": "numeric_continuous",
+    "group": "Dados Físicos"
+  },
+  "height": {
+    "description": "Altura (metros)",
+    "original_name": "Height",
+    "type": "numeric_continuous",
+    "group": "Dados Físicos"
+  },
+  "weight": {
+    "description": "Peso (kg)",
+    "original_name": "Weight",
+    "type": "numeric_continuous",
+    "group": "Dados Físicos"
+  },
+  "family_history": {
+    "description": "Histórico familiar de excesso de peso",
+    "original_name": "family_history",
+    "type": "cat_nominal",
+    "group": "Dados Físicos",
+    "values": {
+      "no": "Não",
+      "yes": "Sim"
+    }
+  },
+  "favc": {
+    "description": "Consumo frequente de alimentos calóricos",
+    "original_name": "FAVC",
+    "type": "cat_nominal",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "no": "Não",
+      "yes": "Sim"
+    }
+  },
+  "fcvc": {
+    "description": "Frequência de consumo de vegetais",
+    "original_name": "FCVC",
+    "type": "numeric_discrete",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "1": "Raramente",
+      "2": "Às vezes",
+      "3": "Sempre"
+    }
+  },
+  "ncp": {
+    "description": "Número de refeições principais",
+    "original_name": "NCP",
+    "type": "numeric_discrete",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "1": "Uma",
+      "2": "Duas",
+      "3": "Três",
+      "4": "Quatro ou mais"
+    }
+  },
+  "caec": {
+    "description": "Come algo entre refeições",
+    "original_name": "CAEC",
+    "type": "cat_ordinal",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "no": "Não",
+      "sometimes": "Às vezes",
+      "frequently": "Frequentemente",
+      "always": "Sempre"
+    }
+  },
+  "ch2o": {
+    "description": "Consumo de água diário",
+    "original_name": "CH2O",
+    "type": "numeric_discrete",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "1": "< 1 Litro",
+      "2": "1-2 Litros",
+      "3": "> 2 Litros"
+    }
+  },
+  "calc": {
+    "description": "Frequência de consumo de álcool",
+    "original_name": "CALC",
+    "type": "cat_ordinal",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "no": "Não",
+      "sometimes": "Às vezes",
+      "frequently": "Frequentemente",
+      "always": "Sempre"
+    }
+  },
+  "scc": {
+    "description": "Faz monitoramento de calorias",
+    "original_name": "SCC",
+    "type": "cat_nominal",
+    "group": "Hábitos Alimentares",
+    "values": {
+      "no": "Não",
+      "yes": "Sim"
+    }
+  },
+  "smoke": {
+    "description": "Fumante",
+    "original_name": "SMOKE",
+    "type": "cat_nominal",
+    "group": "Estilo de Vida",
+    "values": {
+      "no": "Não",
+      "yes": "Sim"
+    }
+  },
+  "faf": {
+    "description": "Frequência de atividade física",
+    "original_name": "FAF",
+    "type": "numeric_discrete",
+    "group": "Estilo de Vida",
+    "values": {
+      "0": "Nenhuma",
+      "1": "1-2 dias/semana",
+      "2": "3-4 dias/semana",
+      "3": "5+ dias/semana"
+    }
+  },
+  "tue": {
+    "description": "Tempo de uso de eletrônicos",
+    "original_name": "TUE",
+    "type": "numeric_discrete",
+    "group": "Estilo de Vida",
+    "values": {
+      "0": "0-2 horas/dia",
+      "1": "3-5 horas/dia",
+      "2": "> 5 horas/dia"
+    }
+  },
+  "mtrans": {
+    "description": "Meio de transporte utilizado",
+    "original_name": "MTRANS",
+    "type": "cat_nominal",
+    "group": "Estilo de Vida",
+    "values": {
+      "automobile": "Automóvel",
+      "motorbike": "Moto",
+      "bike": "Bicicleta",
+      "public_transportation": "Transporte público",
+      "walking": "A pé"
+    }
+  },
+  "obesity": {
+    "description": "Nível de obesidade",
+    "original_name": "Obesity",
+    "type": "target",
+    "values": {
+      "Insufficient_Weight": "Abaixo do Peso",
+      "Normal_Weight": "Peso Normal",
+      "Overweight_Level_I": "Sobrepeso Grau I",
+      "Overweight_Level_II": "Sobrepeso Grau II",
+      "Obesity_Type_I": "Obesidade Grau I",
+      "Obesity_Type_II": "Obesidade Grau II",
+      "Obesity_Type_III": "Obesidade Grau III"
+    }
+  }
+}
