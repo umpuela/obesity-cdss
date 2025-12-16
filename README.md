@@ -10,7 +10,7 @@ Um Sistema de Suporte à Decisão Clínica (CDSS) desenvolvido para auxiliar pro
 
 ## Arquitetura do projeto
 
-O projeto segue princípios de **Clean Architecture** e **Server-Driven UI**, dividido em microsserviços conceituais:
+O projeto segue princípios de **Clean Architecture** e **Server-Driven UI**, dividido em:
 
 ```mermaid
 graph LR
@@ -39,11 +39,11 @@ graph LR
 
 ## Demonstração de funcionalidades
 
-Confira a documentação da API:
+Confira a [documentação da API](https://obesity-api-fiap-latest.onrender.com/):
 
 ![API do FastAPI com documentação Swagger.](/assets/api_usage.gif)
 
-Veja o sistema em ação diagnosticando um paciente em tempo real:
+Veja o [sistema de predição](https://obesity-cdss-fiap.streamlit.app/) em ação diagnosticando um paciente em tempo real:
 
 ![Interface do aplicativo de predição de risco de obesidade. Tem 3 páginas: predição, métricas e insights.](assets/app_usage.gif)
 
@@ -154,7 +154,7 @@ obesity-cdss/
 │       └── config.py      # Configuração global
 ├── tests/                 # Testes unitários e de integração
 ├── docker-compose.yml     # Orquestração
-├── Dockerfile             # Imagem única otimizada
+├── Dockerfile             # Imagem da API e Web
 ├── pyproject.toml         # Gerenciamento de dependências (UV)
 └── README.md
 ```

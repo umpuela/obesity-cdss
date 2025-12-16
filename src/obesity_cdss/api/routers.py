@@ -12,7 +12,7 @@ from obesity_cdss.utils.theme import CUSTOM_PALETTE
 router = APIRouter()
 
 
-@router.get("/", response_class=HTMLResponse)
+@router.get("/", response_class=HTMLResponse, include_in_schema=False)
 async def root() -> HTMLResponse:
     """
     Root endpoint with an stylized HTML interface.

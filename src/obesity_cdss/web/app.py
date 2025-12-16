@@ -3,8 +3,6 @@ import streamlit as st
 from obesity_cdss.utils.theme import apply_plotly_theme
 from obesity_cdss.web.views import insights, metrics, prediction
 
-# uv run streamlit run src/obesity_cdss/web/app.py
-
 st.set_page_config(
     page_title="Obesity Risk CDSS",
     page_icon=":material/body_fat:",
